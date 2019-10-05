@@ -48,7 +48,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate {
         recordLabel.text = "Tap to record !!"
         startRecordingButton.isEnabled = true
         stopRecordingButton.isEnabled = false
-        
+
         audioRecorder.stop()
         let audioSession = AVAudioSession.sharedInstance()
         try! audioSession.setActive(false)
@@ -62,4 +62,3 @@ class ViewController: UIViewController, AVAudioRecorderDelegate {
         }
     }
 }
-
